@@ -3,11 +3,11 @@ $heading = get_field('header', 'options');
 $footer_text = get_field('footer_text', 'options');
 $footer_button = get_field('footer_button', 'options');
 $copyright = get_field('copyright_text', 'options');
-$logo = get_field('app_logo', 'options')
-
+$logo = get_field('app_logo', 'options');
+$anchor = get_field('anchor', 'options')
 ?>
 
-<section class="footer">
+<section class="footer" id='<?php echo $anchor ?>'>
     <div class="container footer__contact">
         <h2><?php echo $heading ?></h2>
         <p><?php echo $footer_text ?></p>

@@ -16,7 +16,7 @@
         if (have_rows('menu', 'options')) :
             while (have_rows('menu', 'options')) : the_row();
         ?>
-                <li><a href=""><?php echo get_sub_field('menu_item') ?></a></li>
+                <li class="menu__item"><a href="#<?php echo get_sub_field('anchor') ?>"><?php echo get_sub_field('menu_item') ?></a></li>
         <?php endwhile;
         endif; ?>
     </div>

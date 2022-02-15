@@ -45,9 +45,11 @@ function my_acf_init_block_types()
             'enqueue_style'     => get_template_directory_uri() . '/blocks/css/open.css',
             'category'          => 'formatting',
             'supports'          => array(
+                'anchor' => true,
                 'align' => true,
                 'mode' => false,
-                'jsx' => true
+                'jsx' => true,
+
             ),
         ));
         acf_register_block_type(array(

@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 100%;
+  max-width: 1167px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
 .navigation {
   width: 100%;
   position: absolute;
@@ -234,32 +268,4 @@
     width: 90px;
     margin-left: -95px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-}
-
-.container {
-  width: 100%;
-  max-width: 1167px;
-  margin: 0 auto;
-  position: relative;
-}
-
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Roboto", sans-serif;
 }
