@@ -1,0 +1,58 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.openHero {
+  margin: 0;
+  padding: 0;
+}
+.openHero__wave {
+  display: none;
+}
+.openHero__wrapper {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  padding-bottom: 40px;
+  max-width: 100%;
+}
+.openHero__text {
+  text-align: center;
+}
+.openHero__text h1 {
+  margin-top: 30px;
+  font-size: 42px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.openHero__text p {
+  margin-bottom: 20px;
+}
+.openHero__img {
+  max-width: 600px;
+  width: 500px;
+  position: static;
+}
+.openHero__img img {
+  max-width: 500px;
+}
+
+.heroList {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.heroList__image {
+  position: static;
+}
+.heroList__wrapper {
+  width: 100%;
+}
+.heroList__wrapper ul {
+  text-align: center;
+}
+
+.counter__number {
+  font-size: 50px;
+}

@@ -1,0 +1,119 @@
+.navigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $pink;
+}
+
+.navi {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px;
+    position: relative;
+    z-index: 20;
+
+    &__menu {
+        margin-top: -10px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &__burger {
+            width: 36px;
+            height: 5px;
+            background-color: white;
+            position: relative;
+            transition: 0.5s;
+
+            &::before {
+                content: "";
+                @extend .navi__menu__burger;
+                position: absolute;
+                top: -10px;
+            }
+
+            &::after {
+                @extend .navi__menu__burger;
+                content: "";
+                position: absolute;
+                top: 10px;
+            }
+
+            &--open {
+                background-color: transparent;
+
+                &::after {
+                    transform: rotate(45deg);
+                    top: 0px;
+                }
+
+                &::before {
+                    transform: rotate(-45deg);
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        font-size: 40px;
+        width: 110px;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $pink;
+        position: absolute;
+        top: 135px;
+        left: 0;
+        width: 100%;
+        padding: 50px;
+        transition: 1s;
+        z-index: 5;
+        box-shadow: 10px 10px 10px -10px black;
+
+        li {
+            list-style: none;
+            padding: 20px 0;
+            text-transform: uppercase;
+
+            &:hover {
+                font-weight: bold;
+            }
+            a {
+                color: white;
+                font-size: 24px;
+                text-decoration: none;
+            }
+        }
+
+        &--close {
+            top: -500%;
+        }
+    }
+
+    @media only screen and (min-width: 1167px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

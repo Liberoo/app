@@ -1,0 +1,70 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.openHero {
+    margin: 0;
+    padding: 0;
+
+    &__wave {
+        display: none;
+    }
+
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        padding-bottom: 40px;
+        max-width: 100%;
+    }
+
+    &__text {
+        text-align: center;
+
+        h1 {
+            margin-top: 30px;
+            font-size: 42px;
+            line-height: 45px;
+            margin-bottom: 30px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        max-width: 600px;
+        width: 500px;
+        position: static;
+
+        img {
+            max-width: 500px;
+        }
+    }
+}
+
+//list block
+.heroList {
+    flex-direction: column;
+    margin: 0;
+
+    padding: 0;
+
+    &__image {
+        position: static;
+    }
+
+    &__wrapper {
+        width: 100%;
+
+        ul {
+            text-align: center;
+        }
+    }
+}
+
+.counter__number {
+    font-size: 50px;
+}

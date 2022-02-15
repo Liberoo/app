@@ -1,0 +1,39 @@
+.counter__wrapper {
+  margin-top: 0px;
+  background-color: #ff4363;
+  padding: 40px 0;
+}
+.counter__wrapper > .wp-block-column {
+  margin-left: 0;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  color: white;
+}
+.counter__number {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 12px;
+}
+.counter__title {
+  font-size: 18px;
+}
+
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:nth-child(2n),
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:first-child) {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .counter__wrapper {
+    padding: 90px 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+  }
+}

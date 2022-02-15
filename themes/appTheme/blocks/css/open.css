@@ -1,0 +1,182 @@
+.openHero {
+  width: 100%;
+  background-color: #ff4363;
+  padding-top: 100px;
+  position: relative;
+}
+.openHero__correct {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+}
+.openHero__wave {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 5;
+  display: none;
+}
+.openHero__wave img {
+  width: 100%;
+}
+.openHero__wrapper {
+  background-color: #ff4363;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.openHero__text h1 {
+  margin-top: 30px;
+  font-size: 42px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.openHero__text p {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .openHero__text {
+    width: 60%;
+  }
+}
+.openHero__img {
+  width: 100%;
+  max-width: 500px;
+}
+.openHero__CTA {
+  display: inline;
+}
+.openHero__CTA a {
+  font-family: "Roboto", sans-serif;
+  color: #ff4363;
+  background-color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  padding: 18px 22px 18px 18px;
+  transition: 0.3s;
+}
+.openHero__CTA a:hover {
+  background-color: #ff4363;
+  color: white;
+}
+.openHero__linkButton {
+  margin-left: 35px;
+  display: inline;
+}
+.openHero__linkButton a {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.openHero__linkButton a::before {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  content: "";
+  width: 15px;
+  height: 18px;
+  background-image: url(../../img/watch.svg);
+}
+.openHero__linkButton a:hover {
+  transform: scale(1.1);
+}
+@media only screen and (min-width: 768px) {
+  .openHero__linkButton {
+    margin-left: 65px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .openHero__wave {
+    display: block;
+    bottom: -7px;
+  }
+  .openHero__wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+  .openHero__text {
+    width: 50%;
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+  .openHero__text h1 {
+    line-height: 60px;
+  }
+  .openHero__img {
+    width: 55vw;
+    max-width: 650px;
+    transform: rotate(-6deg);
+  }
+}
+@media only screen and (min-width: 1167px) {
+  .openHero__text {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .openHero__wrapper {
+    position: relative;
+    margin-top: 120px;
+    padding: 0;
+    max-width: 55%;
+    padding-bottom: 200px;
+  }
+  .openHero__text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .openHero__text h1 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+  .openHero__text p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  .openHero__CTA a {
+    margin-top: 22px;
+    font-size: 24px;
+  }
+  .openHero__linkButton {
+    margin-left: 90px;
+  }
+  .openHero__img {
+    position: absolute;
+    left: 559px;
+    bottom: 64px;
+    max-width: 750px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .openHero__wrapper {
+    padding-bottom: 267px;
+    max-width: 55%;
+  }
+  .openHero__img {
+    bottom: 75px;
+    max-width: 861px;
+  }
+}

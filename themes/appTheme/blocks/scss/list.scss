@@ -1,0 +1,208 @@
+@import "../../scss/variables";
+
+.heroList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto 50px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 10%;
+    }
+
+    &__icon {
+        max-width: 120px;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            margin: 20px 0 20px;
+            font-size: 32px;
+        }
+
+        p {
+            color: #666666;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            margin: 20px 0 20px;
+
+            li {
+                display: inline-block;
+                font-size: 18px;
+                position: relative;
+                margin-bottom: 20px;
+
+                &::before {
+                    content: "";
+                    background-color: #ff7588;
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__image {
+        padding: 0 50px;
+        width: 100%;
+        display: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__button {
+        a {
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            background-color: $pink;
+            padding: 19px 40px 22px 38px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 15px 15px 15px -10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heroList {
+        align-items: flex-end;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 0;
+
+        &__image {
+            position: absolute;
+            top: 160px;
+            left: -540px;
+            width: 590px;
+            display: block;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__icon {
+            max-width: 120px;
+            img {
+                width: 60%;
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+            width: 50%;
+            text-align: left;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 42px;
+            }
+
+            ul {
+                li {
+                    padding: 0;
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .heroList {
+        margin: 0 auto;
+        margin-top: 100px;
+
+        &__image {
+            left: -700px;
+            top: 120px;
+
+            img {
+                width: 640px;
+                max-width: 640px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .heroList {
+        margin: 0 auto;
+        margin-top: 100px;
+        padding-left: 151px;
+        &__icon {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__wrapper {
+            width: 60%;
+            padding-left: 30px;
+            padding-right: 0;
+
+            h2 {
+                margin-top: 5px;
+                font-size: 60px;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 18px;
+                padding: 0;
+            }
+
+            ul {
+                margin-top: 45px;
+            }
+        }
+
+        &__image {
+            top: 167px;
+            left: -741px;
+            width: 50vw;
+
+            img {
+                width: 100%;
+                max-width: 640px;
+            }
+        }
+
+        &__button {
+            margin-top: 10px;
+
+            a {
+                font-size: 24px;
+                padding: 19px 40px 22px 38px;
+            }
+        }
+    }
+}

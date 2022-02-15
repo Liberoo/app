@@ -1,0 +1,164 @@
+.footer {
+    width: 100%;
+    margin-top: 100px;
+
+    &__contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        text-align: center;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0 20%;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            margin: 20px 0;
+            text-align: center;
+            color: #666666;
+        }
+
+        button {
+            background-color: $pink;
+            padding: 19px 40px 22px 38px;
+            border: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            transition: 0.3s;
+
+            a {
+                font-family: "Roboto", sans-serif;
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 15px 15px 15px -10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    &__belt {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 20px 10px;
+
+        &__links {
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+
+                &:hover {
+                    color: $pink;
+                }
+            }
+        }
+
+        img {
+            width: 90px;
+            margin: 10px 0;
+        }
+
+        span {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer {
+        margin-top: 55px;
+
+        &__contact {
+            padding: 40px;
+
+            h2 {
+                font-size: 42px;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 0 80px;
+            }
+        }
+
+        &__belt {
+            padding: 40px;
+
+            &__links {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .footer {
+        &__contact {
+            h2 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-top: 30px;
+                padding: 0 220px;
+            }
+
+            button {
+                margin-top: 15px;
+
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__belt {
+            flex-direction: row;
+            margin-top: 70px;
+
+            padding-top: 20px;
+
+            &__links {
+                margin: 0;
+
+                font-size: 18px;
+                word-spacing: 4px;
+            }
+
+            & > .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            span {
+                color: white;
+                font-size: 18px;
+            }
+
+            img {
+                width: 90px;
+                margin-left: -95px;
+            }
+        }
+    }
+}

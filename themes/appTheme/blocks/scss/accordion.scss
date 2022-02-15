@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+
+.accord__wrapper {
+    margin-top: 50px;
+}
+
+.accord__box {
+    margin-bottom: 35px;
+
+    h4 {
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        color: $pink;
+        cursor: pointer;
+
+        @media only screen and (min-width: 1400px) {
+            font-size: 24px;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        padding: 0;
+    }
+}
+
+.wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
